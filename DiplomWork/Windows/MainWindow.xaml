@@ -1,0 +1,33 @@
+﻿<Window x:Class="DiplomWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiplomWork"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="768" Width="1280" Icon="/Source/icon.png" Background="#24913C">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.23*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.23*"/>
+        </Grid.RowDefinitions>
+        <!--Профиль-->
+        <StackPanel Grid.Column="2" Orientation="Horizontal">
+            <Image Source="/Source/Icon.png" Stretch="Uniform" Margin="15"/>
+            <StackPanel>
+                <Button Content="Профиль"/>
+                <Button Content="Выйти"/>
+            </StackPanel>
+        </StackPanel>
+        <!--Кнопки переходов-->
+        <StackPanel Grid.Column="1" Orientation="Horizontal">
+            <Button Content="Тесты"/>
+        </StackPanel>
+    </Grid>
+</Window>
